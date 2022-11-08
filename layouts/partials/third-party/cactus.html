@@ -1,0 +1,15 @@
+<script>
+    function loadComments() {
+        if (!document.getElementById('comment-section')) {
+            return;
+        } else {
+            initComments({
+                node: document.getElementById("comment-section"),
+                defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+                serverName: "cactus.chat",
+                siteName: '{{ .Site.Params.cactusSiteName }}',
+                commentSectionId: '{{ index .Page.File.UniqueID }}'
+            })
+        }
+    }
+</script>

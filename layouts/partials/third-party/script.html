@@ -17,6 +17,10 @@
             {{ partial "third-party/disqus.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.enableCactus }}
+            {{ partial "third-party/Cactus.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.enableValine }}
             {{ partial "third-party/valine.html" . }}
         {{ end }}

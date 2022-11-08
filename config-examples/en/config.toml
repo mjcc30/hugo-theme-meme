@@ -659,6 +659,9 @@ uglyURLs = false
     enableDisqus = false
     disqusShortname = ""
 
+    ## Cactus
+    enableCactus = false
+
     ## Valine
     enableValine = false
     valineAppId = ""

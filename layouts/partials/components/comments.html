@@ -10,6 +10,10 @@
         {{ if .Site.Params.enableDisqus }}
             <div id="disqus_thread"></div>
         {{ end }}
+        
+        {{ if .Site.Params.enableCactus  }}
+            <div id="comment-section"></div>
+        {{ end }}
 
         {{ if .Site.Params.enableValine }}
             <div id="vcomments"></div>
